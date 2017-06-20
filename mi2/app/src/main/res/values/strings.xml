@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">mi</string>
+    <string name="menu_edit">编辑</string>
+    <string name="menu_enter">完成</string>
+    <string name="menu_del">删除</string>
+    <string name="menu_sett">结算</string>
+    <string name="login_b1">账号不能小于8位数</string>
+    <string name="comm_text">夏季韩版圆领短袖印花T恤女上衣+半身裙长裙蕾丝裙美裙套装</string>
+    <string name="order">暂时还没有任何订单</string>
+    <string name="obligation">还没有待付款的订单哦</string>
+    <string name="shipped">还没有待发货的订单哦</string>
+    <string name="no_receive">还没有待收货的订单哦</string>
+    <string name="no_evaluated">还没有待评价的订单哦</string>
+    <string name="see_buy">去看看有哪些想买的</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip">
+
+        <ImageView
+            android:id="@+id/aftbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/bg_back_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_centerInParent="true"
+            android:text="退款/售后"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip" />
+    </RelativeLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#ffffffff" />
+
+    <FrameLayout
+        android:id="@+id/container_tab"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.0" />
+</LinearLayout>

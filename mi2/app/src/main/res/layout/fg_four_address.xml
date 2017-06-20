@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white">
+<ImageView
+    android:id="@+id/adress_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_back_black"
+    android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理收货地址"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/tianjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+    <ListView
+        android:id="@+id/address_listview"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         android:divider="#00000000" ></ListView>
+</LinearLayout>

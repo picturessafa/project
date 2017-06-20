@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:minHeight="80dp">
+    <myImageView.CircleImageView
+        android:id="@+id/detail_im"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/touxiang1" />
+    <TextView
+        android:id="@+id/detail_te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李**啊"
+        android:layout_toRightOf="@+id/detail_im" />
+    <TextView
+        android:layout_below="@+id/detail_im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="很好，真的不错"/>
+</RelativeLayout>

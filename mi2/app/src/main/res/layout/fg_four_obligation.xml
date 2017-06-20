@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6">
+    <ImageView
+        android:id="@+id/obligation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/nothing"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/obligation_text"
+        android:layout_below="@+id/obligation"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/obligation"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_buy"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/obligation_text"/>
+</RelativeLayout>

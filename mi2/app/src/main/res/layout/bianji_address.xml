@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/edit_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_back_black"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑地址"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:background="@color/white"
+       android:layout_marginTop="12dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="14dp"
+           android:text="收货人:"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@null"/>
+
+   </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="手机号:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="省市区:"/>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="广东省广州市"/>
+        <View
+            android:layout_width="0.100000024dip"
+            android:layout_height="30dp"
+            android:background="#ff929292" />
+        <Button
+            android:id = "@+id/bianji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@mipmap/bg_dinwei"
+            android:text="定位"
+            android:textSize="12dp"
+            android:textColor="@color/fedr"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292" />
+</LinearLayout>

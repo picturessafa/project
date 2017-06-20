@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111" />
+
+    <ImageView
+        android:id="@+id/li_im1"
+        android:layout_width="fill_parent"
+        android:layout_height="180.0dip"
+        android:background="@mipmap/ppp" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:background="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:background="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:background="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:background="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:background="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:background="@mipmap/ic_launcher" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="5.0dip"
+                    android:layout_height="5.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="5.0dip"
+                    android:layout_height="5.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/dot_normal" />
+
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="5.0dip"
+                    android:layout_height="5.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/dot_normal" />
+
+                <View
+                    android:id="@+id/dot_3"
+                    android:layout_width="5.0dip"
+                    android:layout_height="5.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/dot_normal" />
+
+                <View
+                    android:id="@+id/dot_4"
+                    android:layout_width="5.0dip"
+                    android:layout_height="5.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/dot_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

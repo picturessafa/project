@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backgur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/bg_back_black"/>
+
+        <TextView
+            android:id="@+id/settle_en"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_centerInParent="true"
+            android:text="确认订单"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.100000024dip"
+            android:background="#ff929292"
+            android:layout_below="@+id/settle_en"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/settle_consignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="收货人:宋家敏"/>
+        <TextView
+            android:id="@+id/settle_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/settle_consignee"
+            android:layout_marginLeft="10dp"
+            android:text="13710164316"/>
+        <TextView
+            android:id="@+id/settle_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settle_consignee"
+            android:layout_margin="10dp"
+            android:text="广东省广州市白云区珠江公寓"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/bg_jiant"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.100000024dip"
+            android:background="#ff929292"
+            android:layout_below="@+id/settle_address"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f6f6f6" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292"
+        android:layout_below="@+id/settle_address"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <myImageView.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="官方店铺" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292"
+        android:layout_gravity="center"
+        android:layout_below="@+id/settle_address" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/shop_tiele"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@mipmap/bg_dea"/>
+        <TextView
+            android:id="@+id/shop_comm"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="@string/comm_text"
+            android:layout_toRightOf="@+id/shop_tiele"
+            android:layout_toEndOf="@+id/shop_tiele" />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/shop_tiele"
+            android:layout_below="@+id/shop_comm"
+            android:text="颜色:西瓜红;尺码:均码"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥100.0" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/shop_price">
+
+            <TextView
+                android:id="@+id/tv_reduce"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text_angle_gray"
+                android:gravity="center"
+                android:text="一"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/txt_12" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text_angle"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/txt_12" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text_angle_right"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/grey_color1"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292"
+        android:layout_gravity="center"
+        android:layout_below="@+id/settle_address" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送方式:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="全国包邮"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292"
+        android:layout_gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递运费:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥0.00"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292"
+        android:layout_gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格合计:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥100.00"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292"
+        android:layout_gravity="center" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.100000024dip"
+        android:background="#ff929292"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:layout_marginTop="95dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/settle_zon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计:"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fff" />
+        <TextView
+            android:id="@+id/settle_zonprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/settle_zon"
+            android:layout_centerVertical="true"
+            android:text="¥100.00"
+            android:textSize="18dp"
+            android:textColor="@color/fff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认下单"
+            android:layout_toRightOf="@+id/settle_zonprice"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:background="@color/fff"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</LinearLayout>
